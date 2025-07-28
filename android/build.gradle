@@ -1,5 +1,3 @@
-//package android
-
 group 'com.sumanrajpathak.flutter_cell_info'
 version '1.0-SNAPSHOT'
 
@@ -37,11 +35,21 @@ android {
     defaultConfig {
         minSdkVersion 21
     }
+
+    // ADD THESE BLOCKS HERE TO SET THE JVM TARGET COMPATIBILITY
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    // END OF ADDED BLOCKS
 }
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'com.google.code.gson:gson:2.8.7'
-
 }

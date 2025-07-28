@@ -28,8 +28,9 @@ apply plugin: 'kotlin-android'
 // apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 33
     namespace 'com.sumanrajpathak.flutter_cell_info'
+    compileSdkVersion 33
+
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
